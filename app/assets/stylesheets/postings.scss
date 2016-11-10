@@ -1,3 +1,29 @@
 // Place all the styles related to the Postings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.posting-submit {
+  float: left;
+  margin-bottom: 0;
+}
+
+.posting-user-name {
+  float: left;
+  margin-bottom: 0;
+  margin-left: 10px;
+
+  label {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.posting-text {
+  clear: both;
+
+  textarea {
+    width: 300px;
+    height: 100px;
+    margin-top: 5px;
+  }
+}

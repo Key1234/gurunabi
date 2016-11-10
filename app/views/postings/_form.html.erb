@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="actions posting-submit">
+    <%= f.submit %>
+  </div>
+
+  <div class="field posting-user-name">
     <%= f.label :user_name %>
     <%= f.text_field :user_name %>
   </div>
 
-  <div class="field">
-    <%= f.label :text %>
+  <div class="field posting-text">
     <%= f.text_area :text %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
