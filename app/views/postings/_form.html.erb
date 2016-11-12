@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :user_name %>
+  <div class="actions posting-submit">
+    <%= f.submit '投稿' %>
+  </div>
+
+  <div class="field posting-user-name">
+    <%= f.label :user_name, '投稿者名' %>
     <%= f.text_field :user_name %>
   </div>
 
-  <div class="field">
-    <%= f.label :text %>
+  <div class="field posting-text">
     <%= f.text_area :text %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

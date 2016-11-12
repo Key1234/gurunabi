@@ -1,29 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class='posting-index'>
+  <p id="notice"><%= notice %></p>
 
-<h1>Postings</h1>
+  <h1>杉さん掲示板</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>User name</th>
-      <th>Text</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <table>
 
-  <tbody>
-    <% @postings.each do |posting| %>
-      <tr>
-        <td><%= posting.user_name %></td>
-        <td><%= posting.text %></td>
-        <td><%= link_to 'Show', posting %></td>
-        <td><%= link_to 'Edit', edit_posting_path(posting) %></td>
-        <td><%= link_to 'Destroy', posting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <tbody>
+      <% @postings.each do |posting| %>
+        <tr>
+          <td class='title'>
+            <%= posting.id %>
+            ：
+            <span class='user-name'><%= posting.user_name %></span>
+            ：
+            <%= posting.created_at %>
+          </td>
+        </tr>
+        <tr>
+          <td class='text'><%= posting.text %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New Posting', new_posting_path %>
+  <%= link_to '書き込む', new_posting_path, class: 'new-posting' %>
+</div>
