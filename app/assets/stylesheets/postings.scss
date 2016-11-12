@@ -27,3 +27,51 @@
     margin-top: 5px;
   }
 }
+
+.posting-index {
+   h1 {
+     font-size: 50px;
+   }
+  .title {
+    padding-bottom: 0;
+    font-size: 15px;
+    .user-name {
+      color: purple;
+      font-weight: bold;
+      width: 130px;
+      display: inline-block;
+    }
+  }
+
+  .text {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    height: 18px;
+    font-size: 15px;
+  }
+
+  .new-posting {
+    text-decoration: none;
+    background-color: darkslategray;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+  }
+  .new-posting:hover {
+    background-color: gray;
+  }
+}
+
+.back {
+  background-color: blue;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.back:visited {
+  color: white;
+}
+.back:hover {
+  background-color: gray;
+}
